@@ -1,0 +1,22 @@
+{
+  "name": "load-balancer-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env node loadBalancer.js",
+    "mock-api1": "cross-env PORT=3001 node mockApi.js",
+    "mock-api2": "cross-env PORT=3002 node mockApi.js",
+    "mock-api3": "cross-env PORT=3003 node mockApi.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-proxy": "^1.18.1",
+    "morgan": "^1.10.0"
+  }
+}
